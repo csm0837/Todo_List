@@ -1,0 +1,49 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>todoListController</servlet-name>
+        <servlet-class>com.ssg.w1.todo.TodoListController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>todoListController</servlet-name>
+        <url-pattern>/todo/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>todoReadController</servlet-name>
+        <servlet-class>com.ssg.w1.todo.TodoReadController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>todoReadController</servlet-name>
+        <url-pattern>/todo/read</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>todoRegisterController</servlet-name>
+        <servlet-class>com.ssg.w1.todo.TodoRegisterController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>todoRegisterController</servlet-name>
+        <url-pattern>/todo/register</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>todoModifyController</servlet-name>
+        <servlet-class>com.ssg.w1.todo.TodoModifyController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>todoModifyController</servlet-name>
+        <url-pattern>/todo/modify</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>todoModifyController</servlet-name>
+        <url-pattern>/todo/remove</url-pattern>
+    </servlet-mapping>
+
+</web-app>
